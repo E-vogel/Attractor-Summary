@@ -57,24 +57,24 @@ for ii = 1:3049
                 s.XData = X(ii,1:i);
                 s.YData = Y(ii,1:i);
                 s.CData = ColorData(ii,1:i);
-                frame = getframe(gcf);  % Capture the current figure as a frame
-                writeVideo(v,frame);  % Write the frame to the video
+%                frame = getframe(gcf);  % Capture the current figure as a frame
+%                writeVideo(v,frame);  % Write the frame to the video
             elseif i >= 1000 && i < 10000 && mod(i,100) == 0
                 i  % Display the current index
                 % Update the scatter plot data
                 s.XData = X(ii,1:i);
                 s.YData = Y(ii,1:i);
                 s.CData = ColorData(ii,1:i);
-                frame = getframe(gcf);  % Capture the current figure as a frame
-                writeVideo(v,frame);  % Write the frame to the video
+%                frame = getframe(gcf);  % Capture the current figure as a frame
+%                writeVideo(v,frame);  % Write the frame to the video
             elseif i >= 10000 && mod(i,1000) == 0
                 i  % Display the current index
                 % Update the scatter plot data
                 s.XData = X(ii,1:i);
                 s.YData = Y(ii,1:i);
                 s.CData = ColorData(ii,1:i);
-                frame = getframe(gcf);  % Capture the current figure as a frame
-                writeVideo(v,frame);  % Write the frame to the video
+%                frame = getframe(gcf);  % Capture the current figure as a frame
+%                writeVideo(v,frame);  % Write the frame to the video
             end
         end
     end
